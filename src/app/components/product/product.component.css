@@ -1,0 +1,86 @@
+.icon-btn {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  vertical-align: middle;
+}
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 6px;
+  top: calc(50% - 2px);
+  background: rgb(48, 137, 240);
+}
+.add-btn::before {
+  left: 6px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.icon-btn:focus {
+  outline: none;
+}
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 0.75rem;
+}
+.add-btn:hover::before {
+  width: 4px;
+  border-radius: 2px;
+}
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 2px;
+  top: calc(50% - 7px);
+  background: rgb(48, 137, 240);
+  overflow: hidden;
+}
+.add-icon::before {
+  left: 11px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.add-icon::after {
+  right: 10px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.text-normal {
+  font-weight: 400;
+  font-size: small;
+}
+.table {
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+}
+
+.input {
+  flex: 1;
+}
+
+.columns {
+  width: 10.625rem;
+}
+.match {
+  background: var(--tui-selection);
+}
+section:target {
+  display: block !important;
+}

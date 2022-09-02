@@ -38,6 +38,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { RecommendedComponent } from './components/recommended/recommended.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     RecommendedComponent,
     ProductsComponent,
     NotFoundComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
