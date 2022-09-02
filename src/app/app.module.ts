@@ -39,6 +39,8 @@ import { RecommendedComponent } from './components/recommended/recommended.compo
 import { ProductsComponent } from './components/products/products.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProductComponent } from './components/product/product.component';
+import { LoginComponent } from './components/authentication/login/login.component';
+import { RegisterComponent } from './components/authentication/register/register.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { ProductComponent } from './components/product/product.component';
     ProductsComponent,
     NotFoundComponent,
     ProductComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
