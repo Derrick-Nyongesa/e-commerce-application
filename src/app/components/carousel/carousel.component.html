@@ -1,1 +1,90 @@
-<p>carousel works!</p>
+<div
+  class="mt-2"
+  (mouseenter)="carouselaction = true"
+  (mouseleave)="carouselaction = false"
+>
+  <h4 class="w-100 text-center mb-0 pt-4">Today's Deals</h4>
+  <div class="text-center pb-3">
+    <div style="width: 30%; position: absolute; left: 35%">
+      <hr />
+    </div>
+    <img
+      src="assets/images/qappu-line-image-2.png"
+      style="position: absolute; left: 45%; width: 7rem; padding-top: 0.5rem"
+      alt=""
+    />
+  </div>
+  <div tuiCarouselButtons class="wrapper mt-4 pb-3">
+    <button
+      tuiIconButton
+      icon="tuiIconChevronLeftLarge"
+      title="Previous"
+      (click)="carousel.prev()"
+    ></button>
+    <div class="row w-100">
+      <div
+        class="col me-2"
+        style="min-height: 6.65rem; background-color: #d4ebff !important"
+      ></div>
+      <div
+        class="col"
+        style="min-height: 6.65rem; background-color: #d4ebff !important"
+      ></div>
+    </div>
+    <tui-carousel #carousel [duration]="4000" [draggable]="true">
+      <ng-container>
+        <div
+          *tuiItem
+          class="item card"
+          style="min-height: 6.65rem; background-color: aliceblue"
+        >
+          <div class="row" style="height: 10rem">
+            <div
+              class="col-8 h-100 d-flex justify-content-center align-items-center ps-3"
+            >
+              <div class="pt-0">
+                <h4 class="mb-1">deal.product_name</h4>
+                <p class="mb-1">deal.description</p>
+                <div class="row">
+                  <div class="col-6">
+                    <h6 class="d-flex">
+                      Now:
+                      <span> Kes - deal.current_price </span>
+                    </h6>
+                  </div>
+                  <div class="col-6">
+                    <h6>
+                      Was:
+                      <span
+                        class="text-danger"
+                        style="text-decoration: line-through"
+                      >
+                        Kes -ndeal.previous_price
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm">Add to Basket</button>
+              </div>
+            </div>
+            <div class="col-4 h-100" style="display: flex; align-items: center">
+              <img
+                src="https://images.unsplash.com/photo-1619701569160-103cae752dae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=896&q=80"
+                class="d-block img-responsive h-100"
+                alt="Product Deal Image"
+                style="max-height: 8rem"
+              />
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </tui-carousel>
+
+    <button
+      tuiIconButton
+      icon="tuiIconChevronRightLarge"
+      title="Next"
+      (click)="carousel.next()"
+    ></button>
+  </div>
+</div>

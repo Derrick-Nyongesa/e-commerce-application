@@ -1,0 +1,11 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: blueviolet;
+  border-radius: 20%;
+}
+.tui-skeleton {
+  border-radius: 10px;
+}
+.tui-skeleton:after {
+  border-radius: 10px;
+}
