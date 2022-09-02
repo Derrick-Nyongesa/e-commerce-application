@@ -1,1 +1,90 @@
-<p>products works!</p>
+<div class="mt-4">
+  <div style="position: sticky; top: 10px; z-index: 10" class="bg-white pt-4">
+    <h4 class="w-100 text-center mb-0">Retail</h4>
+    <h6 class="text-muted text-center mb-0">All Retail Products</h6>
+    <div class="text-center pb-3 mb-3">
+      <div style="width: 30%; position: absolute; left: 35%">
+        <hr />
+      </div>
+      <img
+        src="assets/images/qappu-line-image-2.png"
+        style="position: absolute; left: 45%; width: 7rem; padding-top: 0.5rem"
+        alt=""
+      />
+    </div>
+    <tui-tabs-with-more [itemsLimit]="10">
+      <button *tuiTab tuiTab>
+        <tui-svg src="tuiIconCard" class="tui-space_right-2"></tui-svg>
+        All
+      </button>
+      <ng-container>
+        <button>
+          <!-- <tui-svg src="tuiIconCall" class="tui-space_right-2"></tui-svg> -->
+          category.name
+        </button>
+      </ng-container>
+    </tui-tabs-with-more>
+  </div>
+  <div
+    class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xxl-5 g-4 mt-2"
+  >
+    <div
+      class="me-2"
+      style="
+        width: 18rem;
+        min-height: 7.65rem;
+        background-color: #d4ebff !important;
+      "
+    ></div>
+  </div>
+  <div
+    class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xxl-5 g-4 mt-2"
+  >
+    <div class="col">
+      <div class="card me-2" style="width: 17rem; cursor: pointer">
+        <img
+          src="https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+          class="card-img-top"
+          style="max-height: 10rem"
+          alt="Product Image"
+        />
+        <div class="card-body">
+          <div class="card-body-text">
+            <tui-island class="island card-title mb-0" size="s">
+              <tui-line-clamp
+                [lineHeight]="20"
+                [linesLimit]="2"
+              ></tui-line-clamp>
+            </tui-island>
+            <tui-island class="island card-text pt-1" size="s">
+              <tui-line-clamp
+                [lineHeight]="20"
+                [linesLimit]="2"
+              ></tui-line-clamp>
+            </tui-island>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button
+              class="btn btn-outline-primary btn-sm me-2"
+              tuiHintId="preview"
+              tuiHintDirection="top-right"
+              [tuiHint]="'Preview Product'"
+            >
+              <span class="icons icon-eye"></span>
+            </button>
+            <button
+              class="btn btn-outline-primary btn-sm"
+              tuiHintId="basket"
+              tuiHintDirection="top-right"
+            >
+              <span class="icons icon-basket"></span>
+            </button>
+          </div>
+
+          <!-- <a href="#" class="btn btn-primary">Add to basket</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <tui-pagination class="my-3"></tui-pagination>
+</div>

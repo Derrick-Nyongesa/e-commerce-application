@@ -1,0 +1,41 @@
+tui-hosted-dropdown {
+  padding-bottom: 1.5rem !important;
+}
+.card-body-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-title {
+  background-color: #ffffff;
+  width: 60%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.card-text {
+  background-color: #ffffff;
+  width: 30%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.content {
+  width: 80vw;
+  height: 80vh;
+}
+.card-img-top:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15);
+  transition: transform 0.75s ease;
+  z-index: 10000;
+}
+.tui-skeleton {
+  border-radius: 10px;
+}
+.tui-skeleton:after {
+  border-radius: 10px;
+}

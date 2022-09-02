@@ -28,6 +28,7 @@ import {
 import { TuiInputModule, TuiSelectModule } from '@taiga-ui/kit';
 import { TuiCardModule } from '@taiga-ui/addon-commerce';
 import { TuiTableModule } from '@taiga-ui/addon-table';
+import { TuiSvgModule } from '@taiga-ui/core';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -45,39 +46,40 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     CarouselComponent,
     RecommendedComponent,
     ProductsComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-        ReactiveFormsModule,
-        TuiCalendarModule,
-        TuiCalendarRangeModule,
-        TuiColorPickerModule,
-        TuiInputColorModule,
-        TuiSelectModule,
-        TuiInputModule,
-        TuiButtonModule,
-        TuiCarouselModule,
-        TuiTagModule,
-        TuiCardModule,
-        TuiTooltipModule,
-        TuiHintModule,
-        TuiTabsModule,
-        TuiInputCountModule,
-        TuiLineClampModule,
-        TuiButtonModule,
-        TuiPaginationModule,
-        TuiBreadcrumbsModule,
-        TuiTableModule,
-        TuiLoaderModule,
-        TuiHostedDropdownModule,
-        TuiInputModule,
-        TuiIslandModule,
-        TuiTextAreaModule
+    ReactiveFormsModule,
+    TuiCalendarModule,
+    TuiCalendarRangeModule,
+    TuiColorPickerModule,
+    TuiInputColorModule,
+    TuiSelectModule,
+    TuiInputModule,
+    TuiButtonModule,
+    TuiCarouselModule,
+    TuiTagModule,
+    TuiCardModule,
+    TuiTooltipModule,
+    TuiHintModule,
+    TuiTabsModule,
+    TuiInputCountModule,
+    TuiLineClampModule,
+    TuiButtonModule,
+    TuiPaginationModule,
+    TuiBreadcrumbsModule,
+    TuiTableModule,
+    TuiLoaderModule,
+    TuiHostedDropdownModule,
+    TuiInputModule,
+    TuiIslandModule,
+    TuiTextAreaModule,
+    TuiSvgModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
