@@ -1,0 +1,9 @@
+.tag_entries {
+  background-color: purple;
+}
+.tui-skeleton {
+  border-radius: 10px;
+}
+.tui-skeleton:after {
+  border-radius: 10px;
+}
